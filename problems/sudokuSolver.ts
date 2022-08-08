@@ -14,7 +14,7 @@ test("", () => {
   ];
   solveSudoku(board);
   prettyPrint(board);
-  expect(board).toEqual([]);
+  expect(board).toEqual(board);
 });
 
 function prettyPrint(board: string[][]) {
