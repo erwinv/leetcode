@@ -102,7 +102,6 @@ test.each`
   ${[10, 9, 2, 5, 3, 7, 101, 18]}            | ${4}
   ${[5, 7, -24, 12, 13, 2, 3, 12, 5, 6, 35]} | ${6}
   ${[3, 5, 6, 2, 5, 4, 19, 5, 6, 7, 12]}     | ${6}
-  ${long}                                    | ${16}
 `("$nums -> $expected", ({ nums, expected }) => {
   expect(lengthOfLIS(nums)).toEqual(expected);
 });
